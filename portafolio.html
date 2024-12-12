@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio Tati</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Portafolio</h1>
+      <nav>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="portafolio.html">Portafolio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="contactanos.html">Contactanos</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <aside class="row">
+    <div class="col-6 d-flex justify-content-center">
+      <div class="img-carousel">
+          <img src="images/Foto 1.jpg" alt="Foto 1">
+          <img src="images/Foto 2.jpg" alt="Foto 2">
+          <img src="images/Foto 3.jpg" alt="Foto 3">
+      </div>
+   </div>
+
+    <article class="col-6 d-flex align-items-center ">
+        <section>
+            <h2 class="hi">¡Holaaa!</h2>
+            <p class="txt"> Soy Lizeth Bautista,productora audiovisual y diseñadora gráfica 
+              apasionada por la creación de historias y el uso de la cámara (Capturando
+              momentos únicos). 
+              En mis tiempos libres me gusta experimentar en la cocina y leer libros de
+              diferentes temáticas.</p>
+            
+            <div class="row">
+              <div class="col-5">
+              <div class="contenedor-skills" id="skills">
+                <h3>Programas</h3>
+                <div class="skills">
+                  <div class="info">
+                    <p><span class="lista"><a href=""><i class="fa-solid fa-camera-retro"></i></a></span>Fotografia</p>
+                    <span class="porcentaje">65%</span>
+                  </div>
+                  <div class="barra">
+                    <div id="ftg" class=""></div>
+                  </div>
+                </div>
+
+                <div class="skills">
+                  <div class="info">
+                    <p><span class="lista"><a href=""><i class="fa-brands fa-html5"></i></a></span>Html</p>
+                    <span class="porcentaje">50%</span>
+                  </div>
+                  <div class="barra">
+                    <div id="html" class=""></div>
+                  </div>
+                </div>
+
+                <div class="skills">
+                  <div class="info">
+                    <p><span class="lista"> <a href=""><i class="fa-solid fa-palette"></i></a></span>Ilustraitor</p>
+                    <span class="porcentaje">55%</span>
+                  </div>
+                  <div class="barra">
+                    <div id="ai" class=""></div>
+                  </div>
+                </div>
+
+                <div class="skills">
+                  <div class="info">
+                    <p><span class="lista"><a href=""><i class="fa-brands fa-css3-alt"></i></a></span>Css</p>
+                    <span class="porcentaje">35%</span>
+                  </div>
+                  <div class="barra">
+                    <div id="css" class=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+                <div class="contenedor-skills" id="skills">
+                  <h3>Habilidades</h3>
+                  <div class="skills">
+                    <div class="info">
+                      <p><span class="lista"> <a href=""><i class="fa-solid fa-paintbrush"></i></a></span>Creatividad</p>
+                      <span class="porcentaje">80%</span>
+                    </div>
+                    <div class="barra">
+                      <div id="crea" class=""></div>
+                    </div>
+                  </div>
+  
+                  <div class="skills">
+                    <div class="info">
+                      <p><span class="lista"> <a href=""><i class="fa-solid fa-user-tie"></i></a></span>Liderazgo</p>
+                      <span class="porcentaje">65%</span>
+                    </div>
+                    <div class="barra">
+                      <div id="lider" class=""></div>
+                    </div>
+                  </div>
+  
+                  <div class="skills">
+                    <div class="info">
+                      <p><span class="lista"><a href=""><i class="fa-solid fa-arrow-trend-up"></i></a></span>Planificación estrategica</p>
+                      <span class="porcentaje">60%</span>
+                    </div>
+                    <div class="barra">
+                      <div id="plan" class=""></div>
+                    </div>
+                  </div>
+  
+                  <div class="skills">
+                    <div class="info">
+                      <p><span class="lista"><a href=""><i class="fa-regular fa-hourglass-half"></i></a></span>Manejo del tiempo</p>
+                      <span class="porcentaje">45%</span>
+                    </div>
+                    <div class="barra">
+                      <div id="tik" class=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              
+        </section>
+    </article>
+</aside>
+  <footer>
+      &copy; 2024 Portafolio Tati. Todos los derechos reservados.
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const skills = [
+    { id: "ftg", percentage: 60 },
+    { id: "html", percentage: 50 },
+    { id: "ai", percentage: 50 },
+    { id: "css", percentage: 30 },
+    { id: "crea", percentage: 60 },
+    { id: "lider", percentage: 50 },
+    { id: "plan", percentage: 50 },
+    { id: "tik", percentage: 30 },
+  ];
+
+  skills.forEach(skill => {
+    const bar = document.getElementById(skill.id);
+    if (bar) {
+      bar.style.width = `${skill.percentage}%`;
+    }
+  });
+});
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".img-carousel img");
+    let currentIndex = 0;
+
+    function showNextImage() {
+        images[currentIndex].classList.remove("active");
+        images[currentIndex].classList.add("prev");
+
+        currentIndex = (currentIndex + 1) % images.length; // Cicla al siguiente índice
+
+        images[currentIndex].classList.remove("prev");
+        images[currentIndex].classList.add("active");
+    }
+
+    // Inicializa la primera imagen
+    images[currentIndex].classList.add("active");
+
+    // Cambia las imágenes cada 3 segundos
+    setInterval(showNextImage, 3000);
+});
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
