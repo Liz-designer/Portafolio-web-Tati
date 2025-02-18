@@ -11,6 +11,8 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+/*Seccion INICIO */
+
 header {
     margin: 5px;
     width: 100%;
@@ -63,14 +65,14 @@ header .nav-bar {
     height: 500px; /* Ajusta según el tamaño de las animaciones */
     position: relative;
     overflow: hidden; /* Evita que las imágenes se desborden */
-    margin-top: -40px;
+    margin-top: -5px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espacio entre los enlaces */
-    margin-top: 5   px; /* Espacio entre la sección y el contenedor de imágenes */
+    gap: 20px; /* Espacio entre los enlaces */
+    margin-top: 20px; /* Espacio entre la sección y el contenedor de imágenes */
 }
 
 .social-links a {
@@ -85,9 +87,11 @@ header .nav-bar {
     color: #007bff;
 }
 
+/* SECCION PORTAFOLIO */
+
 .img-carousel {
     position: relative;
-    width: 45%;
+    width: 30%;
     overflow: hidden;
     height: auto;
 }
@@ -167,83 +171,179 @@ header .nav-bar {
     transition: width 1s ease-in-out; /* Animación de transición */
 }
 
-.productos {
-    color: #fff;
-    padding: 50px 120px;
+/* SECCION PRODUCTOS */
+.videos video {
+    border-radius: 15px; 
+  }
+
+.titulo1 {
+    font-size: 56px;
 }
 
-.productos .contenido-seccion {
-    max-width: 50px;
-    margin: auto;
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Establece el número de columnas y el tamaño mínimo de cada celda */
+    gap: 10px; /* Espaciado entre imágenes */
 }
 
-.productos h2 {
-    font-size: 48px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    padding: 20px 0;
+/* Estilo para las imágenes */
+.mosaico img {
+    width: 100%; /* Hace que las imágenes se ajusten al tamaño de su celda */
+    height: auto;
+    border-radius: 8px; /* Para darle un toque de redondeo a las esquinas si lo deseas */
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para efectos */
 }
 
-.productos .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+/* Efecto hover */
+.mosaico img:hover {
+    filter: brightness(70%); /* Oscurece ligeramente la imagen */
 }
 
-.productos .galeria .proyecto {
+.grande {
+    grid-column: span 2; /* Hacer que la imagen ocupe dos columnas */
+    grid-row: span 2; /* Hacer que la imagen ocupe dos filas */
+}
+
+.mediana {
+    grid-column: span 1;
+    grid-row: span 1; /* Esta imagen ocupa una sola columna y una sola fila */
+}
+
+.videos {
+    padding: 15px 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*SECCION BLOG */
+/* Estilo general para la sección de blog */
+.blog {
+    padding: 60px 20px;
+    
+}
+
+/* Título de la sección */
+.titulo {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo para las tarjetas de cada artículo */
+.blog-arti {
     position: relative;
-    max-width: 300px;
-    height: fit-content;
-    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.blog-arti:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(188, 162, 223, 0.2);
+}
+
+/* Imagen dentro de la tarjeta */
+.blog-arti img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-arti:hover img {
+    transform: scale(1.1);
+}
+
+/* Contenido dentro de la tarjeta */
+.blog-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-content h4 {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Botón "Leer más" */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
-.productos .galeria .proyecto img {
-    width: 100%;
-    display: block;
-    border-radius: 20px;
+.btn-primary:hover {
+    background-color: #0056b3;
 }
 
-.productos .galeria .proyecto video {
-    width: 100%;
-    display: block;
-    border-radius: 20px;
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .blog-card {
+        margin-bottom: 20px;
+    }
 }
 
-.productos  .titulo {
-    font-size: 50px; /* Tamaño de letra */
-    font-weight: bold; /* Negrita para destacar */
-    margin: 0 auto 10px; /* Centra el título y añade espacio debajo */
-    color: #333; /* Color del texto */
-}
+/*  ARTICULOS */
 
-.productos .galeria .proyecto .overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
-}
-
-.productos .galeria .proyecto .overlay h3 {
+  .article-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article h1 {
+    font-size: 2.5em;
+    color: #333;
     margin-bottom: 20px;
-    transition: 1s;
-}
+  }
 
-.productos .galeria .proyecto .overlay:hover {
-    opacity: 1;
-}
+  .article img {
+    margin-bottom: 10px;
+    width: 100%; /* Hace que las imágenes se ajusten al tamaño de su celda */
+    border-radius: 8px; /* Para darle un toque de redondeo a las esquinas si lo deseas */
+    object-fit: cover;
+  }
+  
+  
+  .btn-toggle:hover {
+    background-color: #ff4500;
+  }
 
-.productos .galeria .proyecto .overlay:hover h3 {
-    margin-bottom: 0px;
-}
+  .quote {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 40px;
+    border-left: 5px solid #ff6347;
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+
+/*SECCION CONTACTANOS */
 
 .container {
     max-width: 600px;
@@ -296,6 +396,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+ 
 
 footer {
     text-align: center;
