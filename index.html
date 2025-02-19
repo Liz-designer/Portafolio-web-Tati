@@ -12,21 +12,26 @@
   <body>
     <header>
         <h1>Portafolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
-        <div class="nav-bar" id="nav-bar"><i class="fa-solid fa-bars"></i></div>
+        <nav class="navbar navbar-expand-lg bg-body-trasparent">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link text-dark" href="index.html">Inicio</a>
+                  <a class="nav-link text-dark" href="portafolio.html">Portafolio</a>
+                  <a class="nav-link text-dark" href="productos.html">Productos</a>
+                  <a class="nav-link text-dark" href="blog.html">Blog</a>
+                  <a class="nav-link text-dark" href="contactanos.html">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8 d-flex justify-content-center position-relative image-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 d-flex justify-content-center position-relative image-container">
                 <img src="images/Ti.png" class="z-n1 position-absolute animate__animated animate__backInLeft" alt="">
                 <img src="images/at.png" class="z-0 position-absolute animate__animated animate__bounceInDown animate__delay-1s" alt="">
                 <img src="images/punto.png" class="z-1 position-absolute animate__animated animate__heartBeat animate__delay-2s" alt="">
@@ -37,16 +42,15 @@
                 <img src="images/lineas.png" class="z-6 position-absolute animate__animated animate__zoomIn animate__delay-5s" alt="">
                 <img src="images/produMult.png" class="z-7 position-absolute animate__animated animate__lightSpeedInRight animate__delay-5s" alt="">
             </div>
-            <div class="col-2"></div>
         </div>
     </div>
     <footer>
         <div class="row">
             <div class="col-12 d-flex justify-content-center position-relative social-links">
                 <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
     </footer>
