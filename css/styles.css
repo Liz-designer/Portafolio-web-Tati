@@ -81,34 +81,48 @@ header h1 {
 
 /* SECCION PORTAFOLIO */
 
-.img-carousel {
-    position: relative;
-    width: 30%;
-    overflow: hidden;
-    height: auto;
-}
-
-.img-carousel img {
-    position: absolute;
-    top: 30px;
-    left: 100%; /* Las imágenes empiezan fuera del contenedor */
+.container-box {
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
     border-radius: 10px;
-    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+
+  /* Estilos para el carrusel de imágenes */
+  .img-carousel {
+    position: relative;
+    width: 78%; /* Asegura que ocupe el 100% del contenedor */
     height: auto;
+    overflow: hidden;
+  }
+
+  .img-carousel img {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Las imágenes comienzan fuera del contenedor */
+    width: 100%; /* Hace que las imágenes se adapten al ancho del contenedor */
+    height: auto;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 15px;
-    margin: 50px auto; /* Centrar margen vertical */
+    margin: 0 auto;
     transition: left 0.5s ease-in-out; /* Transición suave */
-}
+  }
 
-.img-carousel img.active {
+  .img-carousel img.active {
     left: 0; /* Imagen activa en el centro */
-}
+  }
 
-.img-carousel img.prev {
+  .img-carousel img.prev {
     left: -100%; /* Imagen previa fuera de vista a la izquierda */
-}
-  
+  }
+
 
 .txt {
     font-family: serif;
@@ -118,11 +132,17 @@ header h1 {
     padding: 5px;       
 }
 
+h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2rem;  /* Tamaño de letra de los encabezados */
+    color: #333;  /* Color del texto */
+}
+
 .hi {
     margin-top: 50px;
     font-size: 40px;
 }
-  
 
 .contenedor-skills {
     padding: 5px 0;
@@ -140,7 +160,6 @@ header h1 {
 }
 
 .contenedor-skills .skills .lista {
-    display: inline-block;
     margin-right: 8px;
     height: 5px;
     width: 10px;
@@ -155,12 +174,21 @@ header h1 {
 }
 
 .contenedor-skills .skills .barra div {
-    background-color: #000000; /* Color de la barra animada */
-    width: 0%; /* La animación comienza desde 0 */
+    background-color: #000000; 
+    width: 0%; 
     height: 100%;
     border-radius: 3px;
-    transition: width 1s ease-in-out; /* Animación de transición */
+    transition: width 1s ease-in-out; 
 }
+
+.contenedor-skills .skills .lista .fa-camera-retro { color: #000000; } 
+.contenedor-skills .skills .lista .fa-html5 { color: #E44D26; } 
+.contenedor-skills .skills .lista .fa-palette { color: #9C27B0; } 
+.contenedor-skills .skills .lista .fa-css3-alt { color: #2965F1; } 
+.contenedor-skills .skills .lista .fa-paintbrush { color: #8BC34A; } 
+.contenedor-skills .skills .lista .fa-user-tie { color: #3F51B5; } 
+.contenedor-skills .skills .lista .fa-arrow-trend-up { color: #FFEB3B; } 
+.contenedor-skills .skills .lista .fa-hourglass-half { color: #FFC107; } 
 
 /* SECCION PRODUCTOS */
 .videos video {
@@ -241,7 +269,6 @@ header h1 {
     box-shadow: 0 15px 30px rgba(188, 162, 223, 0.2);
 }
 
-/* Imagen dentro de la tarjeta */
 .blog-arti img {
     width: 100%;
     height: 200px;
@@ -253,7 +280,6 @@ header h1 {
     transform: scale(1.1);
 }
 
-/* Contenido dentro de la tarjeta */
 .blog-content {
     padding: 20px;
     text-align: center;
@@ -272,7 +298,6 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* Botón "Leer más" */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -318,20 +343,17 @@ header h1 {
     border-radius: 8px; /* Para darle un toque de redondeo a las esquinas si lo deseas */
     object-fit: cover;
   }
-  
-  
-  .btn-toggle:hover {
-    background-color: #ff4500;
-  }
 
   .quote {
     background-color: #f9f9f9;
     padding: 20px;
     margin-top: 40px;
-    border-left: 5px solid #ff6347;
+    border-left: 5px solid #4787ff;
     font-style: italic;
     font-size: 18px;
   }
+
+  
   
 
 /*SECCION CONTACTANOS */
