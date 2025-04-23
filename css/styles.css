@@ -190,6 +190,159 @@ h2, h3 {
 .contenedor-skills .skills .lista .fa-arrow-trend-up { color: #FFEB3B; } 
 .contenedor-skills .skills .lista .fa-hourglass-half { color: #FFC107; } 
 
+
+/* SECCION VIOLET*/
+
+.container-boxviolet {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .ficha-titulo {
+    text-align: center;
+    font-family: 'Gorditas', serif;
+    font-size: 3.0rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personaje-imagen {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .personaje-imagen:hover {
+    transform: scale(1.05);
+  }
+  
+  .info {
+    font-size: 20px;
+  }  
+  
+  .bloque-personaje {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    background-color: #fefefe;
+  }
+  
+  .subtitulo {
+    font-size: 1.9rem;
+    font-family: 'Gorditas', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .divider {
+    height: 2px;
+    width: 200px;
+    background-color: #aaa;
+    margin: 10px 0 20px;
+    border-radius: 2px;
+  }
+  
+  .info {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding-left: 20px;
+  }
+  
+  .info li {
+    margin-bottom: 10px;
+  }
+
+  .video-principal {
+    max-width: 1000px;
+    margin: 50px auto 40px;
+    padding: 0 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-principal video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .galeria-grupo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-items: center; /* Centra los elementos dentro de cada celda */
+    margin-top: 40px;
+  }
+  
+  /* Estilo para cada bloque (título + contenido) */
+  .bloque-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para cada bloque */
+  }
+  
+  /* Estilo para los títulos */
+  .titulo-media {
+    font-family: 'Gorditas', serif;
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilo para los cuadros de imagen */
+  .cuadro-imagen {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .cuadro-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+    aspect-ratio: 4 / 3;
+  }
+  
+  .cuadro-imagen:hover img {
+    transform: scale(1.03);
+  }
+
 /* SECCION PRODUCTOS */
 .videos video {
     border-radius: 15px; 
@@ -320,6 +473,7 @@ h2, h3 {
     }
 }
 
+
 /*  ARTICULOS */
 
   .article-container {
@@ -339,8 +493,8 @@ h2, h3 {
 
   .article img {
     margin-bottom: 10px;
-    width: 100%; /* Hace que las imágenes se ajusten al tamaño de su celda */
-    border-radius: 8px; /* Para darle un toque de redondeo a las esquinas si lo deseas */
+    width: 100%; 
+    border-radius: 8px; 
     object-fit: cover;
   }
 
@@ -353,8 +507,7 @@ h2, h3 {
     font-size: 18px;
   }
 
-  
-  
+
 
 /*SECCION CONTACTANOS */
 
